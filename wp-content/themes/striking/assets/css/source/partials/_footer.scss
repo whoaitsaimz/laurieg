@@ -1,0 +1,49 @@
+/* ======================================================= */
+/*                         Footer                          */
+/* ======================================================= */
+/* Footer Body
+---------------------------------------------------------- */
+#footer {
+	background:#fff;
+	border-top:3px solid #000;
+}
+#footer .inner{
+	padding:10px 0 0px;
+	overflow:hidden;
+}
+#footer_shadow {
+	background: transparent;
+}
+/* Sub Footer
+---------------------------------------------------------- */
+#footer_bottom {
+	letter-spacing: .5px;
+    background: $color-2;
+    color: $color-3;
+    font-size: 10px;
+    a {
+	    color: $color-3;
+    }
+}
+#footer_bottom .inner {
+	padding:12px 0;	
+}
+#copyright {
+	text-align: center;
+}
+#footer_menu {
+	float: right;
+	text-align:right;
+}
+#footer_menu a {
+	padding:0 5px;
+}
+#footer_menu li, #footer_menu ul {
+	display:inline;
+	font-weight:normal;
+	text-transform:uppercase;
+}
+#footer_right_area {
+	position: absolute;
+	right:0px;
+}

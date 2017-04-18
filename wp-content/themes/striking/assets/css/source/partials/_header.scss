@@ -1,0 +1,41 @@
+/* ======================================================= */
+/*                         Feature                         */
+/* ======================================================= */
+#feature {
+	background: $color-2;
+	border-top:3px solid $color-2;
+	border-bottom: 3px solid $color-2;
+	text-align: center;
+	color:$color-5;
+	.inner {
+		padding: 0px;
+	}
+	a {
+		color:$color-5;
+	}
+	h1 {
+		font-size:30px;
+		font-weight: 300;
+		margin-top:10px;
+		padding: 0;
+		color: $color-3;
+		font-family: $font-accent;
+		font-style: italic;
+	}
+	.entry_meta .separater{
+		padding: 0 0.6em;
+	}
+	.entry_meta .comments {
+		position:absolute;
+		right: 0;
+	}
+}
+#introduce { 
+	font-size: 11px;
+    line-height: 1.3em;
+    font-weight: 200;
+    letter-spacing: 1px;
+    overflow: hidden;
+    margin-top: -14px;
+    margin-bottom: 15px;
+}

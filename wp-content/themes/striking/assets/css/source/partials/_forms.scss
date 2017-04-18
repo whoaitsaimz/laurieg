@@ -1,0 +1,65 @@
+/* ======================================================= */
+/*                          Forms                          */
+/* ======================================================= */
+.form-item {
+	margin: 0 0 10px;
+}
+.form-item label {
+	cursor: pointer;
+}
+fieldset {
+	padding: 1em;
+	border: 1px solid #ccc;
+}
+legend {
+	padding: 0 .8em;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+textarea, input[type=text], input[type=password], input[type=email], select {
+	border: 3px double $color-2;
+	background: #fff;
+	font-size: inherit;
+}
+input, select {
+	cursor: pointer;
+}
+input[type=text], input[type=password], input[type=email] {
+	cursor: text;
+}
+textarea {
+	overflow:auto;
+}
+textarea, input {
+	padding: 10px 8px;
+	outline: none;
+}
+select {
+	padding: 2px;
+}
+option {
+	padding: 0 4px;
+}
+input[type=button], button {
+	padding: 4px;
+	cursor: pointer;
+	vertical-align: middle;
+}
+input.text_input:focus,
+textarea.textarea:focus {
+	border-color: $color-1;	
+}
+
+
+
+/* Gravity Forms */
+
+.gform_wrapper { }
+.gform_heading { }
+.gform_description { }
+.gform_body { }
+.gform_fields { }
+.gfield { }
+.ginput_container { }
+.gform_footer { }
+.gform_button { }

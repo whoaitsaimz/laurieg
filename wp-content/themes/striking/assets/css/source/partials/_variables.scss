@@ -1,0 +1,31 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+// Font Face
+@include fontface('walkway_semiboldregular', 'fonts/', 'Walkway_SemiBold-webfont');
+//@include fontface('walkway_black', 'fonts/', 'Walkway_Black-webfont');
+
+
+$font-original: 'TitilliumText22LThin','RabioheadRegular','WorstveldSling', 'WorstveldSlingRegular', 'TitilliumText22LLight', 'WalkwayBoldRegular', sans-serif;
+$font-brand: 'walkway_semiboldregular', 'Open Sans', 'Museo Sans', 'Tahoma', 'Geneva', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+$font-default: 'Open Sans', 'Museo Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$font-accent: 'Playfair Display', serif;
+$font-mono: 'Consolas', 'Bitstream Vera Sans Mono', 'Courier New', 'Courier', monospace;
+
+
+
+// Structure
+$pageWidth: 960px;
+$contentWidth: 620px;
+
+// Text Selection
+$selectionColor: red;
+
+// Colors
+$color-1: red;
+$color-2: #000;
+$color-3: #fff;
+$color-4: #f0f0f0; // very light, used for borders and light backgrounds
+$color-5: #888; // dark for default text
+$color-6: #222; // even darker

@@ -1,0 +1,97 @@
+/* ==========================================================================
+   Comments
+   ========================================================================== */
+
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+}
+
+
+/* Threaded Comments
+---------------------------------------------------------- */
+#comments ul {
+	list-style-type:none;
+}
+.commentlist {
+	margin: 0;
+}
+.commentlist ul {
+	margin-left:20px;
+}
+.commentlist li {
+	margin:0;
+	border-top:1px solid #EEEEEE;	
+}
+.commentlist li .comment_wrap {
+	overflow:visible;
+	padding:20px 0;
+	position:relative;
+}
+.gravatar {
+	float:left;
+	height:70px;
+	border:1px solid #eeeeee;
+}
+.gravatar img{
+	padding:4px;
+	height:60px;
+	width:60px;
+	border:1px solid #FFFFFF;
+	background-color:#F9F9F9;
+}
+.comment_content {
+	min-height:80px; 
+	padding-left:20px;
+	position:relative;
+	overflow:hidden;
+}
+.commentlist li ul li {
+	margin-left: 20px;
+}
+.nocomments {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+.comment_author {
+	font-size:18px;
+	font-style: normal;
+}
+.comment_author span {
+	display:none;
+}
+.comment_time {
+	float:right;
+}
+.comment_text {
+	clear:both;
+	padding-top:5px;
+	overflow:hidden;
+}
+.comments_navigation {
+	margin-top:20px;
+	clear:both;
+	overflow:hidden;
+}
+.comments_navigation .nav_previous {
+	float:left;
+}
+.comments_navigation .nav_next {
+	float:right;
+}
+#respond {
+	margin-top:20px;
+}
+#respond #comment{
+	width:98%;
+}
+#comments label {
+	padding-left: 6px;
+	opacity: 0.75;
+}
+.cancel_comment_reply {
+	margin-bottom:6px;
+}

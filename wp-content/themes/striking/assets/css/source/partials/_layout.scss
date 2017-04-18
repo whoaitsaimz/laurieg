@@ -1,0 +1,390 @@
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+.content-area {
+	float: left;
+	margin: 0 -25% 0 0;
+	width: 100%;
+}
+
+
+.site-content .widget-area {
+	float: right;
+	overflow: hidden;
+	width: 25%;
+}
+
+.site-footer {
+	clear: both;
+	width: 100%;
+}
+
+/* ==========================================================================
+   Alignment
+   ========================================================================== */
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+
+
+/* ======================================================= */
+/*                        Structure                        */
+/* ======================================================= */
+/* Main Structure
+---------------------------------------------------------- */
+#header,
+#feature,
+#page,
+#footer {
+	min-width: $pageWidth;
+}
+#page {
+	position:relative;
+	margin:3px 0 80px;
+}
+#main, #sidebar{ 
+	position:relative; 
+}
+* html #page, * html #sidebar{ 
+	display:inline;
+}
+.inner { 
+	width:$pageWidth;
+	margin:0 auto;
+	position:relative;
+	height:100%;
+}
+#page .inner { 
+	padding: 3em 0 0;
+}
+#page_bottom {
+	background: none;
+}
+/* Right Sidebar
+---------------------------------------------------------- */
+.right_sidebar #main{ float:left; width:630px; }
+.right_sidebar #main .content {
+	width:630px;
+	overflow: hidden;
+}
+.right_sidebar #sidebar {
+	float:right;
+	width:300px;
+	margin: 0 0 0.5em 30px;
+}
+.right_sidebar #sidebar_content {
+	background: url("../images/layout_sprites.png") no-repeat scroll left -209px transparent;
+	padding-top:50px;
+	padding-left:35px;
+	min-height:100px;
+	overflow: hidden;
+}
+.right_sidebar #sidebar_content.lessgap {
+	padding-top:22px;
+}
+.right_sidebar #sidebar_bottom {
+	clear:both;
+	background: url("../images/layout_sprites.png") no-repeat scroll left -159px transparent;
+	height:50px;
+}
+/* Left Sidebar
+---------------------------------------------------------- */
+.left_sidebar #main{ 
+	float:right; 
+	width: $contentWidth; 
+}
+.left_sidebar #main .content {
+	width: $contentWidth;
+	overflow: hidden;
+}
+.left_sidebar #sidebar {
+	float:left;
+	width:300px;
+	margin: 0 30px 0.5em 0;
+}
+.left_sidebar #sidebar_content {
+	background: url("../images/layout_sprites.png") no-repeat scroll right -12259px transparent;
+	padding-top:50px;
+	padding-right:35px;
+	min-height:100px;
+	overflow: hidden;
+}
+.left_sidebar #sidebar_content.lessgap {
+	padding-top:22px;
+}
+.left_sidebar #sidebar_bottom {
+	clear:both;
+	background: url("../images/layout_sprites.png") no-repeat scroll right -12209px transparent;
+	height:50px;
+}
+.home #sidebar_content {
+	padding-top:30px;
+}
+
+/* ======================================================= */
+/*                         Header                          */
+/* ======================================================= */
+#header {
+	z-index: 200;
+	position: relative;
+}
+#top_area {
+	position: absolute;
+	right:205px;
+	top:31px;
+	z-index: 9999;
+}
+#socialmedia {
+	font-size: 17px;
+}
+#navigation {
+	top: 25px;
+	left:-30px;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	ul {
+		margin: 0px auto;
+		padding: 0;
+		list-style-type: none;
+		z-index: 200;
+		text-align: center;
+		display: table;
+		li {
+			position: relative;
+			display: inline-block;
+			float: left;
+			margin: 0px auto;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+				&:last-child a {
+				margin-right: 0px;
+			}
+			a {
+				display: block;
+			    height: 33px;
+			    line-height: 10px;
+			    text-decoration: none;
+			    overflow: hidden;
+			    padding: 9px 11px;
+			    margin-right: 14px;
+			    border:3px double #fff;
+			    &:hover {
+				    border-color: $color-2;
+			    }
+			}
+		}
+	}
+}
+/* Logo & Sitename
+---------------------------------------------------------- */
+#logo > a {
+  display: block;
+  overflow: hidden;
+  width: 800px;
+  margin:0px auto;
+  font-family: $font-accent;
+}
+#logo {
+	padding-top:48px;
+	padding-bottom: 25px;
+}
+#logo_text {
+	text-align: center;
+}
+#site_name {	
+	font-size: 30px;
+    line-height: 1.2em;
+    font-weight: 300;
+    display: none;
+    color: #333;
+}
+#site_description {
+	font-size: 13px;
+	line-height:20px;
+	color: #888;
+	display: block;
+	margin-top: -53px;
+	margin-bottom: 44px;
+}
+
+
+@media (max-width : 960px) {
+	#header,
+	#feature,
+	#page,
+	#footer {
+		min-width: 300px;
+		width:500px;
+	}
+	.inner {
+		min-width: 300px;
+		width:100%;
+	}
+}
+
+
+/* ======================================================= */
+/*                         Columns                         */
+/* ======================================================= */
+/* Basic columns
+---------------------------------------------------------- */
+.one_half, .one_third, .two_third, .three_fourth, .one_fourth, .one_fifth, .two_fifth, .three_fifth, .four_fifth, .one_sixth, .five_sixth {
+	position: relative;
+	margin-right: 4%;
+	float: left;
+	min-height: 1px;
+	height: auto !important;
+	height: 1px;
+}
+.one_half {
+	width: 48%;
+}
+.one_third {
+	width: 30.6666%;
+}
+.two_third {
+	width: 65.3332%;
+}
+.one_fourth {
+	width: 22%;
+}
+.two_fourth {
+	width: 48%;
+}
+.three_fourth {
+	width: 74%;
+}
+.one_fifth {
+	width: 16.8%;
+}
+.two_fifth {
+	width: 37.6%;
+}
+.three_fifth {
+	width: 58.4%;
+}
+.four_fifth {
+	width: 79.2%;
+}
+.one_sixth {
+	width: 13.3333%;
+}
+.two_sixth {
+	width: 30.6666%;
+}
+.three_sixth {
+	width: 47.9998%;
+}
+.four_sixth {
+	width: 65.3332%;
+}
+.five_sixth {
+	width: 82.6665%;
+}
+.last {
+	margin-right: 0 !important;
+	clear: right;
+}
+/* Two level columns
+---------------------------------------------------------- */
+.one_half .one_half {
+	margin-right: 8.3333%;
+	width: 45.8333%;
+}
+.one_half .one_third {
+	margin-right: 8.3333%;
+	width: 27.7778%;
+}
+.one_half .two_third {
+	margin-right: 8.3333%;
+	width: 63.8889%;
+}
+.two_third .one_third {
+	margin-right: 6.1224%;
+	width: 29.2517%;
+}
+.two_third .two_third {
+	margin-right: 6.1224%;
+	width: 64.6258%;
+}
+.two_third .one_fourth {
+	margin-right: 6.1224%;
+	width: 20.4082%;
+}
+
+
+
+/* ======================================================= */
+/*                          Table                          */
+/* ======================================================= */
+table, td, th {
+	vertical-align: middle;
+}
+caption {
+	padding-bottom: 0.8em;
+}
+/* Table Style
+---------------------------------------------------------- */
+.table_style
+{
+	border: 1px solid #dddddd;
+	margin-bottom:20px;
+}
+.table_style table
+{
+	text-align: left;
+	border-collapse: collapse;
+	border: 1px solid #fff;
+	width:100%;
+	padding:0;
+	margin:0;
+}
+.table_style th
+{
+	text-align:center;
+	padding:12px;
+	font-weight: normal;
+	font-size: 14px;
+	color: #555;
+	background-color:#EEEEEE;
+}
+.table_style tbody
+{
+	background: #F9F9F9;
+}
+.table_style td
+{
+	text-align:center;
+	padding: 10px;
+	color: #666;
+	border-top: 1px dashed #fff;
+}
+.table_style tbody tr:hover td
+{
+	color: #333;
+	background: #fff;
+	border-top: 1px solid #fff;
+}
+.table_style tfoot
+{
+	background-color:#f3f3f3;
+}
+.table_style tfoot td
+{
+	padding:8px;
+}

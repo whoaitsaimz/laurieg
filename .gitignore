@@ -1,0 +1,75 @@
+#thanks https://gist.github.com/salcode/9940509
+/syncdb-config
+/syncdb
+/.bak
+/syncdb-temp
+
+# ignore all files and folders in the root except the "wp-content" directory.
+/*
+!wp-content/
+!Gulpfile.js
+!package.json
+
+# ignore all files starting with .
+.*
+
+# track this file .gitignore (i.e. do NOT ignore it)
+!.gitignore
+
+# track .deployignore (i.e. do NOT ignore it)
+!.deployignore
+
+# track .editorconfig file (i.e. do NOT ignore it)
+!.editorconfig
+
+# track readme.md in the root (i.e. do NOT ignore it)
+!readme.md
+
+# ignore all files that start with ~
+~*
+
+# ignore OS generated files
+thumbs.db
+Thumbs.db
+*.DS_Store
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+logs
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# ignore specific themes
+/wp-content/themes/twenty*/
+/wp-content/cache/
+
+# ignore specific plugins
+/wp-content/plugins/w3-total-cache/
+/wp-content/plugins/w3-total-cache/lib/
+
+# ignore wp config
+wp-config.php
+
+/wp-content/backup-*
+/wp-content/themes/striking/.sass-cache
+
+# ignore htaccess
+/.htaccess
